@@ -1,0 +1,14 @@
+{% extends "servermanager/templates/base.html" %}
+{% load url from future %}
+
+{% block content %}
+<h1>Google Apps Configuration</h1>
+
+<ul>
+{% for active in licensed_apps %}
+   <li><label>{{active.key|upper}}:</label> {{active.status}}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'generator:manifest' %}">Download manifest file</a>
+{% endblock %}

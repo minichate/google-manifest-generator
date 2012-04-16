@@ -1,0 +1,12 @@
+# DO NOT MODIFY THIS FILE.
+# This file is automatically maintained by the Mitel Networks SME Server
+# configuration software.  Manually editing this file may put your 
+# system in an unknown state.
+#
+# updated: Thu Apr 12 14:41:55 2012
+awc=licensekey|AwcAudioPorts|1|AwcEnhancedVideo|0|AwcUser|0|AwcWebSessions|1|Expiry|20130513|LicenseVersion|15.2|SyncExpiry|20300101|vLicense|Yes|Signature|0d02a2324928cb2ba977b9a7b8cf6b06
+mas=licensekey|Expiry|20130513|LicenseVersion|13.1|Status|enabled|SyncExpiry|20300101|VirtualMachines|0|vLicense|Yes|Signature|6c5897bfdfa16cae5b332212ea2d2918
+npm=licensekey|LicenseVersion|6.4|Options|105;122;123;131;132;133;141;144;18;19;22;250;306:6;308:960;309:120;310:50;315:9;320:1;323:1;325:1;327:1;329:1;332:2;42;47;501;504;508;510;514;516;52;520;54;601;602;603;800|Status|enabled|SyncExpiry|20300101|vLicense|Yes|Signature|8057d1bf3ddbf7def34b7dbc6a2e13c4
+teleworker=licensekey|Expiry|20300101|IPV6|0|LicenseVersion|14.4|MaxUsers|5000|RemoteAdmin|Yes|SyncExpiry|20300101|WebProxy|Yes|vLicense|Yes|Signature|5bc46708336c89d8faa0c6d389677052
+twinning=licensekey|Client|0|Compression|0|Expiry|20130513|LicenseVersion|1.4|MaxUsers|0|SyncExpiry|20300101|vLicense|Yes|Signature|c5e76f428760481378dfc20bf34b9561
+uc=licensekey|COS_AndroidApp|0|COS_AutoAns|0|COS_BtnProg|0|COS_CallFwd|0|COS_Chat|0|COS_Collab|-1|COS_Console|0|COS_DND|0|COS_DesktopWeb|0|COS_DskPhone|0|COS_ExtDial|0|COS_KnowMgmt|0|COS_LCSPres|0|COS_LaunchPd|0|COS_Locator|0|COS_MSN|0|COS_MobileWeb|0|COS_Pres|0|COS_PresOnMSets|0|COS_Search|0|COS_SftPhone|0|COS_SmrtStat|0|COS_VideoCall|0|COS_VisualVM|0|COS_WebWndw|0|Expiry|20130513|FEAT_Federation|0|FEAT_Peering|0|FEAT_Processors|1|LicenseVersion|18.003|Status|enabled|SyncExpiry|20300101|vLicense|Yes|Signature|0e81630c789eb97f424204c0c6510b31

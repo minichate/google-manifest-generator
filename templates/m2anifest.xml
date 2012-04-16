@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ApplicationManifest xmlns="http://schemas.google.com/ApplicationManifest/2009">
+
+   <Support>{% for link in manifest.supports %}
+      <Link rel="{{ link.rel }}" href="{{ link.href }}" />{% endfor %}
+   </Support>
+
+   <Name>{{ manifest.name }}</Name>
+   <Description>{{ manifest.description }}</Description>
+   
+   {% if manifest.extensions %}
+   <!-- Extension Definitions -->
+   {% for extension in manifest.extensions %}
+   <Extension id="{{ extension.identity }}" type="{{ extension.type }}">{% if extension.name %}
+      <Name>{{ extension.name }}</Name>{% endif %}{% if extension.url %}
+      <Url>{{ extension.url }}</Url>{% endif %}{% if extension.container_name %}
+      <Container name="{{ extension.container_name }}" />{% endif %}{% for scope in extension.scopes %}
+      <Scope ref="{{scope.identity }}" />{% endfor %}{% for trigger in extension.triggers %}
+      <Triggers ref="{{trigger.identity }}" />{% endfor %}{% for param in extension.params %}
+      <Param name="{{ param.name }}" value="{{ param.value }}" />{% endfor %}
+   </Extension>
+   {% endfor %}{% endif %}
+   {% if manifest.scopes %}
+   <!-- Scope Definitions -->
+   {% for scope in manifest.scopes %}
+   <Scope id="{{ scope.identity }}">
+      <Url>{{ scope.url }}</Url>
+      <Reason>{{ scope.reason }}</Reason>
+   </Scope>
+   {% endfor %}{% endif %}
+</ApplicationManifest>

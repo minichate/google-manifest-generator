@@ -1,4 +1,7 @@
 from settings import *
+import os
+
+os.environ['ESDBLIB_LOG_DEBUG'] = 'w00t'
 
 DB_DIRECTORY = PROJECT_ROOT
 

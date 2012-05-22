@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Module>
+  <ModulePrefs
+     title="Mitel"
+     description="Mitel" 
+     author="Test"
+     thumbnail="http://www.mitel.com/js/look2010/mitel_logo_2010.jpg"
+     author_email="test@test.test">
+    <Require feature="oauthpopup" />
+    <Require feature="google.calendar-0.5.read"/>
+    <Require feature="settitle"/>
+    <Require feature="dynamic-height"/>
+    <Require feature="minimessage"/>
+    <OAuth>
+      <Service name="google">
+        <Access url="https://www.google.com/accounts/OAuthGetAccessToken" method="GET" />
+        <Request url="https://www.google.com/accounts/OAuthGetRequestToken?scope=http://www.google.com/calendar/feeds/" method="GET" />
+        <Authorization url="https://www.google.com/accounts/OAuthAuthorizeToken?oauth_callback=https://oauth-opensocial.googleusercontent.com/gadgets/oauthcallback" />
+      </Service>
+    </OAuth>
+</ModulePrefs>
+  <UserPref name="gadget_base" display_name="Gadget Base URL" default_value="{{ HOSTNAME }}"/>
+  <Content type="html">
+  <![CDATA[
+   <script type="text/javascript" src="https://www.google.com/jsapi?autoload=%7Bmodules%3A%5B%7Bname%3Agdata%2Cversion%3A2.x%2Cpackages%3A%5Bcalendar%5D%7D%5D%7D"></script>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script src="{{ HOSTNAME }}js/gadget.js"></script>
+  ]]></Content>
+</Module>

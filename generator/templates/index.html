@@ -10,5 +10,19 @@
 {% endfor %}
 </ul>
 
+<br />
+
+<p>
 <a href="{% url 'generator:manifest' %}">Download manifest file</a>
+</p>
+
+<form action="{% url 'generator:home' %}" method="POST">
+{% csrf_token %}
+<table>
+{{ auth_form.as_table }}
+</table>
+<input type="submit" name="submit_auth" />
+</form>
+
 {% endblock %}
+
